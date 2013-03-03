@@ -1,0 +1,72 @@
+html,
+body {
+	width:100%;
+	height:100%;
+	font-family: Arial;
+}
+
+#chat {
+	width:100%;
+	height:80%;
+	z-index: 3;
+	position:fixed;
+} 
+
+#box {
+	display: block;
+	width:100%;
+	height:85%;
+	border:1px solid gray;
+	cursor: text;
+	overflow: scroll;
+	padding:5px;
+	background: rgba(255,255,255,.2);
+	position: fixed;
+	z-index: 2;
+}
+
+#box p {
+	margin:8px 0;	
+	padding:5px;
+	color:red;
+}
+
+#box p .username {
+	background:#ccc;
+	padding:5px 8px;
+	margin-right:5px;
+}
+
+#box p.is-admin .username {
+	background:#ff00ff;
+}
+
+#box p.is-me .username {
+	background:yellow;
+}
+
+#username {
+	width:20%;
+	position:fixed;
+}
+
+
+
+#chatbox {
+	width:30%;
+	border:1px solid black;	
+	font-size:20px;
+	padding:5px;
+	z-index: 2;
+	position:fixed;
+	
+}
+
+#window{
+z-index: 1;
+margin-top: -100px;
+height:1000px;
+
+
+
+}
